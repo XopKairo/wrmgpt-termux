@@ -7,7 +7,7 @@ import sys
 import time
 
 # Set your OpenAI API key
-openai.api_key = os.getenv("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")
+api_key = os.getenv('OPENAI_API_KEY')
 
 def fix_errors(code):
     response = openai.Completion.create(
